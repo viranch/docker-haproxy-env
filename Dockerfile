@@ -6,4 +6,4 @@ RUN curl -L https://github.com/jwilder/dockerize/releases/download/v0.0.2/docker
 
 ADD haproxy.tmpl /etc/dockerize/
 
-CMD dockerize -template /etc/dockerize/haproxy.tmpl:/usr/local/etc/haproxy/haproxy.cfg haproxy -f /usr/local/etc/haproxy/haproxy.cfg
+CMD ["dockerize", "-template", "/etc/dockerize/haproxy.tmpl:/usr/local/etc/haproxy/haproxy.cfg", "haproxy", "-f", "/usr/local/etc/haproxy/haproxy.cfg"]
