@@ -11,6 +11,8 @@ Bare minimum HAProxy docker image that does TCP roundrobin on backends supplied 
   - `-p 80:80 -e PORT=80` with desired port numbers.
   - `-e BACKENDS=foo.com,bar.com` with actual app server backends.
 
+- This repository includes a sample [docker-compose.yml](https://github.com/viranch/docker-haproxy-env/blob/master/docker-compose.yml), copy the service block into your docker-compose.yml if you're using [docker-compose](https://docs.docker.com/compose).
+
 ### What does it contain?
 
 - [HAProxy](https://hub.docker.com/_/haproxy/)

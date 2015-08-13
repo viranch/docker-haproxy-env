@@ -1,0 +1,7 @@
+proxy:
+  image: viranch/haproxy-env
+  environment:
+    BACKENDS: "172.17.53.199:80"
+    PORT: "80"
+  ports:
+    - "80:80"
